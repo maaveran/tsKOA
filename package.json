@@ -5,17 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-server" : "nodemon --watch 'src/**/*' -e  ts,tsx --exec 'ts-node' ./src/server.ts",
-    "build-ts" : "tsc",
-    "build" : "npm run build-ts"
- 
+    "watch-server": "nodemon --watch 'src/**/*' -e  ts,tsx --exec ts-node ./src/server.ts",
+    "build-ts": "tsc",
+    "build": "npm run build-ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "koa": "^2.5.3",
-    "koa-router": "^7.4.0"
+    "cors": "^2.8.4",
+    "koa": "^2.6.1",
+    "koa-cors": "0.0.16",
+    "koa-router": "^7.4.0",
+    "pg": "^7.5.0",
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.41.0",
+    "sequelize-typescript": "^0.6.6"
   },
   "devDependencies": {
     "@types/koa": "^2.0.46",
